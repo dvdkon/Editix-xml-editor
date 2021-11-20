@@ -59,14 +59,6 @@ public class ScEditorKit extends DefaultEditorKit {
 		setSyntaxColorDescriptor(propertyFile);
 	}
 
-//@@
-	static {
-		System.out.println("JSyntaxColor v1.2.9 evaluation version");
-		System.out.println("(c) 2002-2005 JAPISoft");
-		System.out.println("http://www.japisoft.com");
-	}
-//@@
-
 	/** Build a default <code>PlainDocument</code> */
 	public Document createDefaultDocument() {
 		return new PlainDocument();

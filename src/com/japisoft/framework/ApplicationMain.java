@@ -44,12 +44,6 @@ Copyright (c) 2018 Alexandre Brillant - JAPISOFT SARL - http://www.japisoft.com
 */
 public class ApplicationMain {
 
-//@@
-	static {
-//		System.out.println( "SwingAppKit - 30 Days Evaluation Version" );
-	}
-//@@
-
 	private static String[] initArgs;
 	private static List<ApplicationStepListener> listeners = null;
 	

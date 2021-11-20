@@ -59,12 +59,6 @@ public class XPath {
 		}
 	}
 
-//@@
-	static {
-		System.out.println( "JXP 1.3.9 - 30 Day Evaluation Version\nhttp://www.japisoft.com" );
-	}
-//@@	
-
 	/** This constructor searches the Kit using the system property
 	 * com.japisoft.jxp.kit. An Runtime exception is thrown is the
 	 * property is not defined or if the kit provided is not found
