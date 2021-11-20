@@ -26,6 +26,7 @@ import com.thaiopensource.relaxng.output.rng.RngOutputFormat;
 import com.thaiopensource.relaxng.output.xsd.XsdOutputFormat;
 import com.thaiopensource.util.UriOrFile;
 import com.thaiopensource.xml.sax.ErrorHandlerImpl;
+import com.thaiopensource.resolver.BasicResolver;
 
 /**
 This program is available under two licenses : 
@@ -143,7 +144,7 @@ public class ConvertAction extends AbstractAction {
 					.load(
 						UriOrFile.toUri(container.getCurrentDocumentLocation()),
 						new String[] {
-			}, param, eh);
+			}, param, eh, BasicResolver.getInstance());
 
 			OutputDirectory od =
 				new LocalOutputDirectory(

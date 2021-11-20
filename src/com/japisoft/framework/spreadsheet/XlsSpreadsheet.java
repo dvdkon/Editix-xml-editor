@@ -5,6 +5,7 @@ import java.io.OutputStream;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -50,13 +51,13 @@ public class XlsSpreadsheet extends AbstractSpreadsheet {
 			for ( int j = row.getFirstCellNum(); j< row.getLastCellNum(); j++ ) {
 				Cell c = row.getCell( j );
 				String value = null;
-				if ( c.getCellType() == Cell.CELL_TYPE_NUMERIC ) {
+				if ( c.getCellType() == CellType.NUMERIC ) {
 					value = Double.toString( c.getNumericCellValue() );
 				} else
-				if ( c.getCellType() == Cell.CELL_TYPE_BOOLEAN ) {
+				if ( c.getCellType() == CellType.BOOLEAN ) {
 					value = Boolean.toString( c.getBooleanCellValue() );
 				} else
-				if ( c.getCellType() == Cell.CELL_TYPE_FORMULA ) {
+				if ( c.getCellType() == CellType.FORMULA ) {
 					value = c.getCellFormula();
 				} else
 					value = c.getStringCellValue();

@@ -18,6 +18,22 @@ compileJava {
 dependencies {
 	implementation fileTree(dir: "lib", include: ["**/*.jar"])
 	implementation group: "net.sf.jtidy", name: "jtidy", version: "r938"
+	implementation group: "org.apache.xmlgraphics", name: "batik-swing", version: "1.14"
+	implementation group: "commons-net", name: "commons-net", version: "3.8.0"
+	implementation group: "org.apache.xmlgraphics", name: "fop", version: "2.6"
+	implementation group: "jaxen", name: "jaxen", version: "1.2.0"
+	implementation group: "org.json", name: "json", version: "20210307"
+	implementation group: "msv", name: "isorelax", version: "20050913"
+	implementation group: "msv", name: "msv", version: "20050913"
+	implementation group: "org.apache.poi", name: "poi", version: "5.1.0"
+	implementation group: "org.apache.poi", name: "poi-ooxml", version: "5.1.0"
+	implementation group: "net.sf.saxon", name: "Saxon-HE", version: "9.5.1-8"
+	implementation group: "net.sf.saxon", name: "Saxon-HE", version: "9.5.1-8"
+	implementation group: "saxon", name: "saxon", version: "6.5.3"
+	implementation group: "org.swinglabs", name: "swingx", version: "1.6.1"
+	implementation group: "org.swinglabs", name: "swing-layout", version: "1.0.3"
+	implementation group: "org.relaxng", name: "trang", version: "20181222"
+	implementation group: "xerces", name: "xercesImpl", version: "2.12.1"
 }
 
 application {
