@@ -52,7 +52,7 @@ Copyright (c) 2018 Alexandre Brillant - JAPISOFT SARL - http://www.japisoft.com
 public class HTMLImport extends AbstractAction {
 
 	public void actionPerformed(ActionEvent e) {		
-		//£££
+		//Â£Â£Â£
 		JFileChooser chooser = EditixFactory
 				.buildFileChooserForDocumentType("XHTML");
 		if (chooser.showOpenDialog(EditixFrame.THIS) == JFileChooser.APPROVE_OPTION) {
@@ -70,7 +70,7 @@ public class HTMLImport extends AbstractAction {
 				EditixFactory.buildAndShowErrorDialog( "Can't import : " + exc.getMessage() );				
 			}
 		}
-		//££
+		//Â£Â£
 	}
 
 	public static byte[] convertHTMLInputStream( InputStream input ) {

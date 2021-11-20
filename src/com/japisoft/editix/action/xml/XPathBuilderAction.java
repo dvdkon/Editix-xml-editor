@@ -48,7 +48,7 @@ public class XPathBuilderAction extends AbstractAction {
 
 	public void actionPerformed(ActionEvent e) {
 		
-		//£££
+		//Â£Â£Â£
 		String title = "Build an XPath 1.0 expression and apply it from the current node or root node. A dialog will appear for non node result";
 			
 		XPathDialog dialog = new XPathDialog(
@@ -63,7 +63,7 @@ public class XPathBuilderAction extends AbstractAction {
 		items = dialog.getItems();
 		vars = dialog.getVariablesModel();
 		namespaces = dialog.getNamespacesModel();
-		//££
+		//Â£Â£
 	}
 
 }

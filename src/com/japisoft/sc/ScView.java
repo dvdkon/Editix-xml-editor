@@ -112,7 +112,7 @@ class ScView extends PlainView implements Runnable {
 						e = getElement().getElement(select_endY);
 						int select_endX = select_end - e.getStartOffset();
 
-						// Même ligne
+						// MÃªme ligne
 						if (lineIndex == lineX && lineIndex == lineY) {
 
 							if ( offset >= select_startX && offset + line.count <= select_endX ) {

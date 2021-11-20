@@ -55,7 +55,7 @@ public class CSVImport extends AbstractAction {
 
 	public void actionPerformed(ActionEvent e) {
 		
-		//£££
+		//Â£Â£Â£
 		
 		File csvFile = FileManager.getSelectedFile( true, "csv", "CSV File" );
 
@@ -76,7 +76,7 @@ public class CSVImport extends AbstractAction {
 
 			}
 		} 
-		//££
+		//Â£Â£
 	}
 
 	public static String impCSV(File dataFile, CSVPanel config) {

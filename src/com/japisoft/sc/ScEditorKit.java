@@ -395,7 +395,7 @@ public class ScEditorKit extends DefaultEditorKit {
 		vf.setSyntaxLexer(sl);
 
 		Hashtable ht = new Hashtable();
-		// Order the token descriptor read firstly each token°
+		// Order the token descriptor read firstly each tokenÂ°
 
 		if (p.containsKey("tokenMatchIni")) {
 			String v = p.getProperty("tokenMatchIni");

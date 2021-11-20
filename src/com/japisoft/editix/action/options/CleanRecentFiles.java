@@ -42,11 +42,11 @@ Copyright (c) 2018 Alexandre Brillant - JAPISOFT SARL - http://www.japisoft.com
 public class CleanRecentFiles extends AbstractAction {
 	public void actionPerformed(ActionEvent e) {
 		
-		//£££
+		//Â£Â£Â£
 		if ( EditixFactory.buildAndShowConfirmDialog( "Please confirm this operation" ) ) {
 			EditixFrame.THIS.getBuilder().
 				cleanMenuItems( "openr" );
 		}
-		//££
+		//Â£Â£
 	}
 }

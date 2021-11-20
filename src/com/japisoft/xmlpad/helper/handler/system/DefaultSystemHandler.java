@@ -71,7 +71,7 @@ public class DefaultSystemHandler extends AbstractSystemHandler {
 							addDescriptor( 
 								new TagDescriptor(
 									l.get( i ), 
-									"<" + l.get( i ) + ">¤</" + l.get( i ) + ">" ) 
+									"<" + l.get( i ) + ">â‚¬</" + l.get( i ) + ">" ) 
 							);
 						}
 					}

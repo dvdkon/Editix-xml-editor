@@ -191,7 +191,7 @@ public class OpenHTTPAction extends AbstractAction {
 		
 
 /*			
-		//£££
+		//Â£Â£Â£
 		ImportURLUI ui = new ImportURLUI();
 		if ( DialogManager.showDialog(
 				EditixFrame.THIS,
@@ -217,7 +217,7 @@ public class OpenHTTPAction extends AbstractAction {
 			}
 		}
 
-		//££
+		//Â£Â£
 */
 
 	}

@@ -90,7 +90,7 @@ public class GenerateSchemaDoc extends AbstractAction {
 
 	public void actionPerformed(ActionEvent e) {
 				
-		//£££
+		//Â£Â£Â£
 		XMLContainer container = EditixFrame.THIS.getSelectedContainer();
 		if ( container.getCurrentDocumentLocation() == null ) {
 			EditixFactory.buildAndShowErrorDialog( "Please save your Schema before" );
@@ -172,7 +172,7 @@ public class GenerateSchemaDoc extends AbstractAction {
 				EditixFactory.buildAndShowErrorDialog( "Can't create documentation : " + e1.getMessage() );
 			}			
 		}
-		//££
+		//Â£Â£
 	}
 	
 	private String getTM( NodeList nl ) {

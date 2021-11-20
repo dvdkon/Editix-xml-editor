@@ -101,7 +101,7 @@ public class ParametersModel {
 		// lineCounter++;		
 		// location.put( parameter , lineCounter );
 
-		String[] res = parameter.split( "—" );
+		String[] res = parameter.split( "Â—" );
 		if ( res != null && res.length == 2 ) {
 			String param = res[ 0 ].trim();
 			String help = res[ 1 ].trim();

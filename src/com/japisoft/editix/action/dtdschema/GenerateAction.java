@@ -63,7 +63,7 @@ public abstract class GenerateAction extends AbstractAction {
 
 	public void actionPerformed( ActionEvent e ) {
 
-		//£££
+		//Â£Â£Â£
 		// Get the current root
 
 		XMLContainer container = EditixFrame.THIS.getSelectedContainer();
@@ -108,7 +108,7 @@ public abstract class GenerateAction extends AbstractAction {
 			if ( formatResult )
 				ActionModel.activeActionById( "format", null );
 		}
-		//££
+		//Â£Â£
 	}
 
 }

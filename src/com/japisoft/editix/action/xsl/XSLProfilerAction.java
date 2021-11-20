@@ -48,7 +48,7 @@ public class XSLProfilerAction extends AbstractAction {
 
 	public void actionPerformed(ActionEvent e) {
 		
-		//£££		
+		//Â£Â£Â£		
 		
 		XMLContainer container = EditixFrame.THIS.getSelectedContainer();
 		IXMLPanel panel = EditixFrame.THIS.getSelectedPanel();
@@ -83,7 +83,7 @@ public class XSLProfilerAction extends AbstractAction {
 		XSLTAction.applyTransformation( panel, true, true, true, xsltAction );
 		XSLTManager.endProfiler();
 
-		//££
+		//Â£Â£
 	}
 
 }

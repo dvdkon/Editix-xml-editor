@@ -54,7 +54,7 @@ public class EditiXPlasticTheme extends Silver {
 	// Border externe
 	private final ColorUIResource secondary1	= primary1;
 	
-	// Zone grisée + Separateur
+	// Zone grisÃ©e + Separateur
 	private final ColorUIResource secondary2	= new ColorUIResource(180,180,180);
 	// Couleur de fond des panneaux
 	private final ColorUIResource secondary3	= new ColorUIResource( Integer.parseInt( "E5E5E5", 16 ) );

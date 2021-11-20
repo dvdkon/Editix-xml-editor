@@ -51,7 +51,7 @@ public class RefactorAction extends AbstractAction {
 
 	public void actionPerformed(ActionEvent e) {
 
-		//£££
+		//Â£Â£Â£
 		final XMLContainer container = EditixFrame.THIS
 				.getSelectedContainer();
 
@@ -144,7 +144,7 @@ public class RefactorAction extends AbstractAction {
 						+ e1.getMessage());
 			}
 		}
-		//££
+		//Â£Â£
 		
 	}
 }

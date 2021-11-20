@@ -55,7 +55,7 @@ public class ExportJavaAction extends AbstractAction {
 	public void actionPerformed(ActionEvent e) {
 	
 		
-		//£££		
+		//Â£Â£Â£		
 		XMLContainer container = 
 			EditixFrame.THIS.getSelectedContainer();
 
@@ -102,7 +102,7 @@ public class ExportJavaAction extends AbstractAction {
 			}
 
 		}
-		//££
+		//Â£Â£
 	}
 
 	private void copyJavaFile( String name, File dirDest, String newpackage ) {

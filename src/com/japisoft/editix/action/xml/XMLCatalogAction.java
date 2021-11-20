@@ -51,11 +51,11 @@ public class XMLCatalogAction extends AbstractAction {
 	
 	public void actionPerformed( ActionEvent e ) {
 		
-		//£££
+		//Â£Â£Â£
 		XMLCatalogDialog catalog = new XMLCatalogDialog();
 		catalog.setVisible( true );
 		catalog.dispose();
-		//££
+		//Â£Â£
 	}
 
 }

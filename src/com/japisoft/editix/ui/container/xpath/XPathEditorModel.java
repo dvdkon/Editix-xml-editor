@@ -51,7 +51,7 @@ public class XPathEditorModel implements SerializeStateObject {
 	}
 
 	public void restoreState(String serialize) {
-		String[] tmp = serialize.split( "£" );
+		String[] tmp = serialize.split( "Â£" );
 		xpath = tmp[ 0 ];
 		columns = new ArrayList<XPathColumn>();
 		for ( int i = 1; i < tmp.length; i++ ) {
@@ -64,7 +64,7 @@ public class XPathEditorModel implements SerializeStateObject {
 	public String serializeState() {
 		StringBuffer sb = new StringBuffer( this.xpath );
 		for ( int i = 0; i < getColumnCount(); i++ ) {
-			sb.append( "£" );
+			sb.append( "Â£" );
 			sb.append( getColumn( i ).serializeState() );
 		}
 		return sb.toString();
@@ -109,13 +109,13 @@ public class XPathEditorModel implements SerializeStateObject {
 		public XPathColumn() {}
 
 		public void restoreState(String serialize) {
-			String[] tmp = serialize.split( "µ" );
+			String[] tmp = serialize.split( "Âµ" );
 			this.setName( tmp[ 0 ] );
 			this.setXpath( tmp[ 1 ] );
 		}
 
 		public String serializeState() {
-			return getName() + "µ" + getXpath();
+			return getName() + "Âµ" + getXpath();
 		}
 
 		public String getName() {

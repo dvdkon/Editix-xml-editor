@@ -143,7 +143,7 @@ public class XPathInnerView extends JPanel
 	}
 
 	public void restoreState(String serialize) {
-		String[] tmp = serialize.split( "ง" );
+		String[] tmp = serialize.split( "ยง" );
 		cbAutomaticActivation.setSelected( Boolean.parseBoolean( tmp[ 0 ] ) );
 		DefaultComboBoxModel cbm = new DefaultComboBoxModel();
 		XPathEditorModel selected = null;
@@ -175,7 +175,7 @@ public class XPathInnerView extends JPanel
 		);
 		for ( int i = 0; i < cbXPath.getItemCount(); i++ ) {
 			XPathEditorModel model = ( XPathEditorModel )cbXPath.getItemAt( i );
-			sb.append( "ง" );
+			sb.append( "ยง" );
 			if ( cbXPath.getSelectedItem() == model ) {
 				sb.append( "*" );
 			}

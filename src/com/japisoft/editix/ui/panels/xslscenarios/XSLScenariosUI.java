@@ -208,7 +208,7 @@ public class XSLScenariosUI extends javax.swing.JPanel implements
 		String param = scenarioNode.getAttribute( "param" );
 		// Rebuild all the parameters
 		Properties p = new Properties();
-		String[] content = param.split( "¤" );
+		String[] content = param.split( "â‚¬" );
 		for ( String property : content ) {
 			int i = property.indexOf( "=" );
 			String key = property.substring( 0, i );
@@ -290,7 +290,7 @@ public class XSLScenariosUI extends javax.swing.JPanel implements
 							property.startsWith( foFilter ) ||
 								property.startsWith( xqueryFilter )) {
 						if ( res.length() > 0 )
-							res.append( "¤" );
+							res.append( "â‚¬" );
 						res.append( property ).append( "=" ).append( container.getProperty( property ) );
 						found = true;
 					}
@@ -299,7 +299,7 @@ public class XSLScenariosUI extends javax.swing.JPanel implements
 		
 					// Add the document type
 					String type = container.getDocumentInfo().getType();
-					res.append( "¤" ).append( "type=" ).append( type );
+					res.append( "â‚¬" ).append( "type=" ).append( type );
 					
 					FPNode parentNode = (FPNode) t.getSelectionPath()
 					.getLastPathComponent();

@@ -46,7 +46,7 @@ Copyright (c) 2018 Alexandre Brillant - JAPISOFT SARL - http://www.japisoft.com
 public class DisplayOccurencesAction extends AbstractAction {
 
 	public void actionPerformed(ActionEvent e) {
-		//£££
+		//Â£Â£Â£
 		Action a = ActionModel.restoreAction( "criteria" );
 		if ( a == null ) {
 			System.err.println( "Can't find the action criteria in editix.xml ??" );
@@ -79,7 +79,7 @@ public class DisplayOccurencesAction extends AbstractAction {
 			( ( PanelAction )a ).setForceAlwaysShown( false );
 
 		}
-		//££
+		//Â£Â£
 	}
 
 }

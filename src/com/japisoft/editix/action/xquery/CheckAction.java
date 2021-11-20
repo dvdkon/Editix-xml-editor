@@ -99,7 +99,7 @@ public class CheckAction extends AbstractAction implements CheckableAction {
 
 	public void actionPerformed(ActionEvent e) {
 
-		//£££
+		//Â£Â£Â£
 
 		XQueryEditor editor = ( XQueryEditor )EditixFrame.THIS.getSelectedContainer();
 		if ( editor == null ) {
@@ -108,7 +108,7 @@ public class CheckAction extends AbstractAction implements CheckableAction {
 		}
 
 		checkDocument( editor, false );
-		//££
+		//Â£Â£
 		
 	}
 

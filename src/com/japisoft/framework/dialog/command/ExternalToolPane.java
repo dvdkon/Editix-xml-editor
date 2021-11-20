@@ -214,7 +214,7 @@ public class ExternalToolPane extends JPanel implements ActionListener {
 
       String args = txaArguments.getText();
 
-      // Résolutionn macro
+      // RÃ©solutionn macro
 
       for ( Enumeration keys = htMacro.keys(); keys.hasMoreElements(); ) {
         String init = ( String )keys.nextElement();

@@ -465,9 +465,9 @@ public class ContentAssistantUI implements
 			String toInsert = d.toExternalForm();
 
 			// Check for marker : cursor location
-			int cursorLocation = toInsert.indexOf( '¤' );
+			int cursorLocation = toInsert.indexOf( 'â‚¬' );
 			if (cursorLocation > -1) {
-				toInsert = toInsert.replaceAll( "¤", "" );
+				toInsert = toInsert.replaceAll( "â‚¬", "" );
 			}
 
 			if ( d.getSource() != null &&

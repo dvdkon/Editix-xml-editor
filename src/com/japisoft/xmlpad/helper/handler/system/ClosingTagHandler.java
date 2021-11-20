@@ -47,7 +47,7 @@ public class ClosingTagHandler extends AbstractSystemHandler {
 			String closingTag = document.getPreviousOpeningTag( offset - 2 );
 			if ( closingTag != null )
 				addDescriptor(
-					new BasicDescriptor( "/" + closingTag + ">¤" ) );
+					new BasicDescriptor( "/" + closingTag + ">â‚¬" ) );
 		} catch ( BadLocationException e ) {
 		}
 	}

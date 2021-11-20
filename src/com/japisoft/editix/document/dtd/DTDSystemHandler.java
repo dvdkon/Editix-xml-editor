@@ -51,20 +51,20 @@ public class DTDSystemHandler extends AbstractHelperHandler {
 
 		( ( AbstractDescriptor )addDescriptor( 
 				new BasicDescriptor( 
-						addedString + "ELEMENT ¤>" ) ) ).setComment( "DTD Element description" );
+						addedString + "ELEMENT â‚¬>" ) ) ).setComment( "DTD Element description" );
 
 		( ( AbstractDescriptor )addDescriptor( 
 				new BasicDescriptor( 
-						addedString + "ENTITY ¤name \"\">" ) ) ).setComment( "DTD Entity" );
+						addedString + "ENTITY â‚¬name \"\">" ) ) ).setComment( "DTD Entity" );
 
 		AbstractDescriptor d = ( ( AbstractDescriptor )addDescriptor( 
 				new BasicDescriptor( 
-						addedString + "ATTLIST ¤>", true ) ) );
+						addedString + "ATTLIST â‚¬>", true ) ) );
 		d.setComment( "DTD Attributs description" );
 
 		( ( AbstractDescriptor )addDescriptor( 
 				new BasicDescriptor( 
-						addedString + "NOTATION ¤>" ) ) ).setComment( "XML comment" );
+						addedString + "NOTATION â‚¬>" ) ) ).setComment( "XML comment" );
 		
 		( ( AbstractDescriptor )addDescriptor( 
 				new BasicDescriptor( 

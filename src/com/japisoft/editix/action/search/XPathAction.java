@@ -46,7 +46,7 @@ public class XPathAction extends AbstractAction {
 	DefaultTableModel namespaces = null;
 
 	public void actionPerformed(ActionEvent e) {
-		//£££
+		//Â£Â£Â£
 		String title = "Find/Build an XPath 1.0 expression and apply it from the current node \n or root node. This dialog applies only for searching nodes";
 			
 		XPathDialog dialog = new XPathDialog(
@@ -62,7 +62,7 @@ public class XPathAction extends AbstractAction {
 		items = dialog.getItems();
 		vars = dialog.getVariablesModel();
 		namespaces = dialog.getNamespacesModel();
-		//££
+		//Â£Â£
 	}
 
 }
