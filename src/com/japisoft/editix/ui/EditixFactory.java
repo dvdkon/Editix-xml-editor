@@ -223,6 +223,15 @@ public class EditixFactory {
 		if ( "XSC".equals( docType ) ) {
 			XFlowsEditor xfe = new XFlowsEditor();
 			return xfe;
+		} else
+		if ( "XSD".equals( docType ) ) {
+			XSDEditor xse = new XSDEditor(new XSDFactoryImpl());
+			xse.setObserver(new XSDEditorObserver() {
+				@Override
+				public void switchToView(XSDEditor editor, boolean visualMode) {
+				}
+			});
+			return xse;
 		}
 		return new EditixXMLContainer();
 	}

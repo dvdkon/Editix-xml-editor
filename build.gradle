@@ -17,6 +17,7 @@ compileJava {
 
 dependencies {
 	implementation fileTree(dir: "lib", include: ["**/*.jar"])
+	implementation group: "net.sf.jtidy", name: "jtidy", version: "r938"
 }
 
 application {
