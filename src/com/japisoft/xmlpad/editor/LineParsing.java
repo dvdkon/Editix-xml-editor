@@ -327,23 +327,23 @@ class LineParsing {
 					case '\t':
 					case '\n':
 					case ' ':
-						String _ = buffer.toString();
-						if ( "!ELEMENT".equals( _ ) ) {
+						String s = buffer.toString();
+						if ( "!ELEMENT".equals( s ) ) {
 							current.type = LineElement.DTD_ELEMENT;
 							flushBuffer();
 							current = new LineElement(
 									majorLineElement = LineElement.DTD_ELEMENT_CONTENT);
-						} else if ( "!ATTLIST".equals( _ ) ) {
+						} else if ( "!ATTLIST".equals( s ) ) {
 							current.type = LineElement.DTD_ATTRIBUTE;
 							flushBuffer();
 							current = new LineElement(
 									majorLineElement = LineElement.DTD_ATTRIBUTE_CONTENT);
-						} else if ( "!ENTITY".equals( _ ) ) {
+						} else if ( "!ENTITY".equals( s ) ) {
 							current.type = LineElement.DTD_ENTITY;
 							flushBuffer();
 							current = new LineElement(
 									majorLineElement = LineElement.DTD_ENTITY_CONTENT);
-						} else if ( "!NOTATION".equals( _ ) ) {
+						} else if ( "!NOTATION".equals( s ) ) {
 							current.type = LineElement.DTD_NOTATION;
 							flushBuffer();
 							current = new LineElement( LineElement.INNER_DTD );

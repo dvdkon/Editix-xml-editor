@@ -61,12 +61,12 @@ public class LookAndFeelApplicationStep implements ApplicationStep {
 		for (int i = 0; uf != null && i < uf.length; i++) {
 			l.add(uf[i].getName());
 		}
-		String[] _ = new String[l.size()];
+		String[] lcopy = new String[l.size()];
 		for (int i = 0; i < l.size(); i++)
-			_[i] = (String) l.get(i);
+			lcopy[i] = (String) l.get(i);
 
 		String className = Preferences.getPreference( "interface",
-				"lookAndFeel", _)[0];
+				"lookAndFeel", lcopy)[0];
 
 		if ( EditixApplicationModel.MACOSX_MODE ) {
 			l.add( "EDITIX" );

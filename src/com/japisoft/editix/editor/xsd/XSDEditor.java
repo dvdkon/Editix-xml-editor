@@ -185,8 +185,8 @@ public class XSDEditor extends JTabbedPane
 
 				if ( d.getDocumentElement() == null ) {
 					// Create it
-					Element _ = d.createElementNS( SchemaHelper.SCHEMA_NS, "xs:schema" );
-					d.appendChild( _ );
+					Element elem = d.createElementNS( SchemaHelper.SCHEMA_NS, "xs:schema" );
+					d.appendChild( elem );
 					// Create a initial element
 					Element __ = SchemaHelper.createElement( 
 							schemaRoot.getDocumentElement(), 
@@ -194,12 +194,12 @@ public class XSDEditor extends JTabbedPane
 					d.getDocumentElement().appendChild( __ );
 				} else {
 					// Check the root node
-					Element _ = d.getDocumentElement();
-					if ( !SchemaHelper.SCHEMA_NS.equals( _.getNamespaceURI() ) ) {
+					Element elem = d.getDocumentElement();
+					if ( !SchemaHelper.SCHEMA_NS.equals( elem.getNamespaceURI() ) ) {
 						factory.buildAndShowErrorDialog( "Wrong namespace for the root element, wait for 'http://www.w3.org/2001/XMLSchema'\nPlease fix it" );
 						setSelectedIndex( 0 );						
 					} else {
-						if ( !"schema".equals( _.getLocalName() ) ) {
+						if ( !"schema".equals( elem.getLocalName() ) ) {
 							factory.buildAndShowErrorDialog( "Wrong name for the root element, wait for 'schema'\nPlease fix it" );
 							setSelectedIndex( 0 );													
 						} else {

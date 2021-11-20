@@ -100,13 +100,13 @@ public class FontDialog extends BasicOKCancelDialogComponent {
 	}
 
 	public Font getValue() {
-		String _ = tfName.getText();
-		if ( "".equals( _ ) )
-			_ = "dialog";
+		String tfn = tfName.getText();
+		if ( "".equals( tfn ) )
+			tfn = "dialog";
 
 		return 
 			new Font( 
-				_,
+				tfn,
 				cbStyle.getSelectedIndex(),
 				cbSize.getSelectedIndex() + 10 );
 	}

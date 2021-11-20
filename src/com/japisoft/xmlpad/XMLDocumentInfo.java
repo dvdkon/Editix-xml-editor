@@ -105,10 +105,10 @@ public class XMLDocumentInfo {
 
 		if (params == null)
 			return "";
-		String _ = (String) params.get(paramName);
-		if (_ == null)
+		String p = (String) params.get(paramName);
+		if (p == null)
 			return "";
-		return _;
+		return p;
 	}
 
 	private Vector fileExts;

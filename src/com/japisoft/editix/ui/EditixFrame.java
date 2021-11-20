@@ -583,11 +583,11 @@ public class EditixFrame extends JFrame
 	public void removeContainer(Component panel) {
 		if (panel instanceof IView) {
 			for (int i = 0; i < mainTabbedPane.getTabCount(); i++) {
-				IXMLPanel _ = (IXMLPanel) (mainTabbedPane.getModel().getTab(i)
+				IXMLPanel tab = (IXMLPanel) (mainTabbedPane.getModel().getTab(i)
 						.getComponent());
-				if ( _.getMainContainer() != null )
-					if (_.getMainContainer().getView() == panel) {
-						panel = _.getView();
+				if ( tab.getMainContainer() != null )
+					if (tab.getMainContainer().getView() == panel) {
+						panel = tab.getView();
 						break;
 					}
 			}

@@ -320,9 +320,9 @@ class XMLTextView extends CommonView implements XMLViewable {
 		g.setColor(LineElement.getColor((XMLEditor) getContainer(), false,
 				false, LineElement.TAG_UNDERLINE, 0, 0));
 
-		int _ = y;
+		int z = y;
 		for (int i = oldx; i <= x; i += 2) {
-			g.drawLine(i, _, i, _);
+			g.drawLine(i, z, i, z);
 		}
 	}
 

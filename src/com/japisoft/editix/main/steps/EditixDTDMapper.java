@@ -90,8 +90,8 @@ public class EditixDTDMapper implements DTDMapper {
 			return null;
 		}
 		
-		String _ = httpURL.substring( 7 );
-		return new File( cacheLocation, _ );
+		String path = httpURL.substring( 7 );
+		return new File( cacheLocation, path );
 	}
 	
 	/** @return the directory for the cache */
@@ -119,7 +119,6 @@ public class EditixDTDMapper implements DTDMapper {
 
 	public InputStream getStream( String url ) throws IOException {
 		if (url.startsWith( "http://" ) ) {
-			String _ = url.substring( 7 );
 			File path = getPathForURL( url );
 			if ( path != null && path.exists() ) {
 				return new FileInputStream( path.toString() );

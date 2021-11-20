@@ -63,12 +63,12 @@ public class LookAndFeelStep extends ApplicationStepAdapter {
 		for (int i = 0; uf != null && i < uf.length; i++) {
 			l.add(uf[i].getClassName());
 		}
-		String[] _ = new String[l.size()];
+		String[] lc = new String[l.size()];
 		for (int i = 0; i < l.size(); i++)
-			_[i] = (String) l.get(i);
+			lc[i] = (String) l.get(i);
 
 		String className = Preferences.getPreference( "interface",
-				"lookAndFeel", _)[0];
+				"lookAndFeel", lc)[0];
 
 		LookAndFeel look = null;
 		if ( "DEFAULT".equals( className ) ) {

@@ -189,9 +189,9 @@ public class PreferencesDialog
 				String type = group + "." + name + ".type";
 				String value = prop.getProperty(key);
 				try {
-					int _ = Integer.parseInt(
+					int i = Integer.parseInt(
 							prop.getProperty( type ) );
-					addValue(group, name, _, value);
+					addValue(group, name, i, value);
 				} catch (NumberFormatException exc) {
 				}
 			}
@@ -381,14 +381,14 @@ public class PreferencesDialog
 
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == buttonColor) {
-				Color _ =
+				Color c =
 					JColorChooser.showDialog(
 						buttonColor,
 						"Color",
 						buttonColor.getBackground());
-				if (_ != null) {
-					buttonColor.setBackground(_);
-					currentValue = _;
+				if (c != null) {
+					buttonColor.setBackground(c);
+					currentValue = c;
 				}
 			} else if (e.getSource() == buttonFont) {
 				FontDialog dialog = new FontDialog( PreferencesDialog.this, buttonFont.getFont());
@@ -422,17 +422,17 @@ public class PreferencesDialog
 				dialog.setVisible(true);
 				currentValue = dialog.getBounds();
 			} else if ( e.getSource() == cbChoice ) {
-				String[] __ = ( String[] )currentValue;
-				String _ = (String)cbChoice.getSelectedItem();
-				for ( int i = 0; i < __.length; i++ ) {
-					if ( __[ i ].equals(  _ ) ) {
-						String old = __[ 0 ];
-						__[ 0 ] = _;
-						__[ i ] = old;
+				String[] cv = ( String[] )currentValue;
+				String si = (String)cbChoice.getSelectedItem();
+				for ( int i = 0; i < cv.length; i++ ) {
+					if ( cv[ i ].equals( si ) ) {
+						String old = cv[ 0 ];
+						cv[ 0 ] = si;
+						cv[ i ] = old;
 						break;
 					}
 				}
-				currentValue = __;
+				currentValue = cv;
 			} else if ( e.getSource() == cbBoolean ) {
 				currentValue = new Boolean( "true".equals( cbBoolean.getSelectedItem() ) );
 			}
@@ -474,9 +474,9 @@ public class PreferencesDialog
 			} else if ( value instanceof String[] ) {
 				DefaultComboBoxModel 
 					model = new DefaultComboBoxModel();
-				String[] _ = ( String[] )value;
-				for  ( int i = 0; i < _.length; i++ )
-					model.addElement( _[ i ] );
+				String[] s = ( String[] )value;
+				for  ( int i = 0; i < s.length; i++ )
+					model.addElement( s[ i ] );
 				cbChoice.setModel( model );
 				cbChoice.setSelectedIndex( 0 );
 				return cbChoice;
@@ -532,9 +532,9 @@ public class PreferencesDialog
 			} else if (value instanceof String[]) {
 				DefaultComboBoxModel 
 					model = new DefaultComboBoxModel();
-				String[] _ = ( String[] )value;
-				for  ( int i = 0; i < _.length; i++ )
-					model.addElement( _[ i ] );
+				String[] s = ( String[] )value;
+				for  ( int i = 0; i < s.length; i++ )
+					model.addElement( s[ i ] );
 				cbChoice.setModel( model );
 				cbChoice.setSelectedIndex( 0 );				
 				return cbChoice;

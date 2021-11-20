@@ -54,13 +54,13 @@ public class SystemView extends AbstractAction {
 			BrowserCaller.displayURL(
 					container.getCurrentDocumentLocation() );
 		} else {
-			String _ = container.getText();
-			if ( _.startsWith( "<?") ) {
-				int i = _.indexOf( "\n" );
+			String text = container.getText();
+			if ( text.startsWith( "<?") ) {
+				int i = text.indexOf( "\n" );
 				if ( i > -1 )
-					_ = _.substring( i );
+					text = text.substring( i );
 			}
-			HTMLDialog dialog = new HTMLDialog( _ );
+			HTMLDialog dialog = new HTMLDialog( text );
 	
 			Point p = ( Point )container.getProperty( "view.html.location" );
 			Dimension d =( Dimension )container.getProperty( "view.html.dimension" );

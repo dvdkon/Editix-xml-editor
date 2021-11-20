@@ -195,13 +195,13 @@ public class OkCancelDialog extends JDialog implements ActionListener {
 		JPanel pnlHeaderIcon = new JPanel();
 		pnlHeaderIcon.setBackground(Color.WHITE);
 		pnlHeaderIcon.setLayout(new BorderLayout());
-		JLabel _;
+		JLabel l;
 
 		URL url = ClassLoader.getSystemClassLoader().getResource(icon);
 
 		if ( url != null )
 		pnlHeaderIcon.add(
-			_ =
+			l =
 				new JLabel(
 					new ImageIcon( url 
 						)),

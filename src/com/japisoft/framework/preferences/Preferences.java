@@ -290,14 +290,14 @@ public class Preferences {
 		if (obj instanceof Integer)
 			return "" + ( ( Integer ) obj ).intValue();
 		else if (obj instanceof Color) {
-			Color _ = ( Color ) obj;
-			return _.getRed() + "," + _.getGreen() + "," + _.getBlue();
+			Color c = ( Color ) obj;
+			return c.getRed() + "," + c.getGreen() + "," + c.getBlue();
 		} else if ( obj instanceof Font ) {
-			Font _ = ( Font ) obj;
-			return _.getName() + "," + _.getStyle() + "," + _.getSize();
+			Font f = ( Font ) obj;
+			return f.getName() + "," + f.getStyle() + "," + f.getSize();
 		} else if ( obj instanceof Rectangle ) {
-			Rectangle _ = ( Rectangle )obj;
-			return _.x + "," + _.y + "," + _.width + "," + _.height;
+			Rectangle r = ( Rectangle )obj;
+			return r.x + "," + r.y + "," + r.width + "," + r.height;
 		} else if ( obj instanceof String[] ) {
 			StringBuffer sb = new StringBuffer();
 			String[] ss = ( String[] )obj;
@@ -371,13 +371,13 @@ public class Preferences {
 		
 		if (preferences.containsKey(key)) {
 			try {
-				Integer _;
+				Integer i;
 				valueCache.put(
 					key,
-					_ =
+					i =
 						(Integer) getValueByType(INTEGER,
 							preferences.getProperty(key)));
-				return _.intValue();
+				return i.intValue();
 			} catch (NumberFormatException exc) {
 			}
 		} else {
@@ -403,13 +403,13 @@ public class Preferences {
 		
 		if (preferences.containsKey(key)) {
 			try {
-				Double _;
+				Double d;
 				valueCache.put(
 					key,
-					_ =
+					d =
 						(Double) getValueByType(DOUBLE,
 							preferences.getProperty(key)));
-				return _.doubleValue();
+				return d.doubleValue();
 			} catch (NumberFormatException exc) {
 			}
 		} else {
@@ -434,13 +434,13 @@ public class Preferences {
 		checkPreferencesLoad();		
 		
 		if ( preferences.containsKey( key ) ) {
-			Boolean _;
+			Boolean b;
 			valueCache.put(
 				key,
-				_ =
+				b =
 					(Boolean) getValueByType(BOOLEAN,
 						preferences.getProperty(key)));
-			return _.booleanValue();
+			return b.booleanValue();
 		} else {
 			String type = group + "." + name + ".type";
 			preferences.setProperty(key, "" + defaultValue);
@@ -463,10 +463,10 @@ public class Preferences {
 		
 		if (preferences.containsKey(key)) {
 			try {
-				String _ = preferences.getProperty(key);
-				Color __;
-				valueCache.put(key, __ = (Color) getValueByType(COLOR, _));
-				return __;
+				String s = preferences.getProperty(key);
+				Color c;
+				valueCache.put(key, c = (Color) getValueByType(COLOR, s));
+				return c;
 			} catch (Throwable exc) {
 			}
 		} else {
@@ -496,10 +496,10 @@ public class Preferences {
 		
 		if (preferences.containsKey(key)) {
 			try {
-				String _ = preferences.getProperty(key);
-				Font __ = (Font) getValueByType(FONT, _);
-				valueCache.put(key, __);
-				return __;
+				String s = preferences.getProperty(key);
+				Font f = (Font) getValueByType(FONT, s);
+				valueCache.put(key, f);
+				return f;
 			} catch (Throwable exc) {
 			}
 		} else {
@@ -528,10 +528,10 @@ public class Preferences {
 		
 		if (preferences.containsKey(key)) {
 			try {
-				String _ = preferences.getProperty(key);
-				Rectangle __ = (Rectangle) getValueByType(RECTANGLE, _);
-				valueCache.put(key, __);
-				return __;
+				String s = preferences.getProperty(key);
+				Rectangle r = (Rectangle) getValueByType(RECTANGLE, s);
+				valueCache.put(key, r);
+				return r;
 			} catch (Throwable exc) {
 			}
 		} else {
@@ -560,10 +560,10 @@ public class Preferences {
 		
 		if (preferences.containsKey(key)) {
 			try {
-				String _ = preferences.getProperty(key);
-				String[] __ = (String[]) getValueByType(CHOICE, _);
-				valueCache.put(key, __);
-				return __;
+				String s = preferences.getProperty(key);
+				String[] sa = (String[]) getValueByType(CHOICE, s);
+				valueCache.put(key, sa);
+				return sa;
 			} catch (Throwable exc) {
 			}
 		} else {
@@ -592,10 +592,10 @@ public class Preferences {
 		
 		if (preferences.containsKey(key)) {
 			try {
-				String _ = preferences.getProperty(key);
-				Character __ = (Character) getValueByType(CHAR, _);
-				valueCache.put(key, __);
-				return __.charValue();
+				String s = preferences.getProperty(key);
+				Character c = (Character) getValueByType(CHAR, s);
+				valueCache.put(key, c);
+				return c.charValue();
 			} catch (Throwable exc) {
 			}
 		} else {
@@ -622,9 +622,9 @@ public class Preferences {
 		
 		if (preferences.containsKey(key)) {
 			try {
-				String _ = preferences.getProperty(key);
-				valueCache.put(key, _);
-				return _;
+				String s = preferences.getProperty(key);
+				valueCache.put(key, s);
+				return s;
 			} catch (Throwable exc) {
 			}
 		} else {

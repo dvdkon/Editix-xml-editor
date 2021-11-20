@@ -248,8 +248,8 @@ public abstract class AbstractTagHelper extends AbstractHelper implements TagHel
 		}
 
 		for (int i = 0; i < tags.size(); i++) {
-			Object _;
-			model.addElement( _ = tags.get( i ) );
+			Object o;
+			model.addElement( o = tags.get( i ) );
 		}
 
 		if ( addSystemTag() ) {

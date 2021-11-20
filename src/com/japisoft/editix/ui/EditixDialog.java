@@ -107,11 +107,11 @@ public class EditixDialog extends BasicDialogComponent {
 	JToggleButton fixButton;
 
 	private String getDialogName() {
-		String _ = getClass().getName();
-		int i = _.lastIndexOf( "." );
+		String cn = getClass().getName();
+		int i = cn.lastIndexOf( "." );
 		if ( i > -1 )
-			return _.substring( i + 1 );
-		return _;
+			return cn.substring( i + 1 );
+		return cn;
 	}
 
 	protected Border createContentBorder() {

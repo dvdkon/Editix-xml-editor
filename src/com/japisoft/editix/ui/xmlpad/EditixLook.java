@@ -109,9 +109,9 @@ public class EditixLook extends XMLPadLook {
 		editor.setColorForAttribute( Preferences.getPreference( "editor", "attribute", Color.BLUE.brighter() ) );
 		editor.setColorForLiteral( Preferences.getPreference( "editor", "litteral", Color.RED.darker() ) );
 		
-		Color _ = Color.BLUE.darker();
-		editor.setColorForTag( Preferences.getPreference( "editor", "tag", _ ) );
-		editor.setColorForDTDNotation( Preferences.getPreference( "editor", "dtdnotation", _ ) );
+		Color c = Color.BLUE.darker();
+		editor.setColorForTag( Preferences.getPreference( "editor", "tag", c ) );
+		editor.setColorForDTDNotation( Preferences.getPreference( "editor", "dtdnotation", c ) );
 		editor.setColorForDTDElement( Preferences.getPreference( "editor", "dtdelement", Color.CYAN.darker() ) );
 		
 		editor.setColorForDTDAttribute( Preferences.getPreference( "editor", "dtdattribute", Color.GREEN.darker() ) );

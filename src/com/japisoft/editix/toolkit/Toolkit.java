@@ -135,13 +135,13 @@ public class Toolkit {
 				JarURLConnection jarCon =
 					(JarURLConnection) url.openConnection();
 				url = jarCon.getJarFileURL();
-				String _ = url.toExternalForm();
-				_ = _.replaceAll( "%20", " " );
-				if (_.startsWith("file://"))
-					return _.substring(6);
-				else if (_.startsWith("file:/"))
-					return _.substring(5);
-				return _;
+				String eu = url.toExternalForm();
+				eu = eu.replaceAll( "%20", " " );
+				if (eu.startsWith("file://"))
+					return eu.substring(6);
+				else if (eu.startsWith("file:/"))
+					return eu.substring(5);
+				return eu;
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

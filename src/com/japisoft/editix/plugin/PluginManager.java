@@ -67,9 +67,9 @@ public class PluginManager {
 			return;
 		int i = 0;
 		while (i < s.length) {
-			String _ = s[i++];
-			if (_.endsWith(".jar"))
-				load(new File(f, _));
+			String n = s[i++];
+			if (n.endsWith(".jar"))
+				load(new File(f, n));
 		}
 	}
 

@@ -680,10 +680,10 @@ public class XPathDialog
 				else if ( "Decimal".equals( type ) ) {
 					context.setVariableValue(name, new Double("" + value));
 				} else if ( "Boolean".equals( type ) ) {
-					String _ = ("" + value).toLowerCase();
+					String lval = ("" + value).toLowerCase();
 					context.setVariableValue(
 						name,
-						new Boolean("true".equals(_)));
+						new Boolean("true".equals(lval)));
 				}
 			}
 		}

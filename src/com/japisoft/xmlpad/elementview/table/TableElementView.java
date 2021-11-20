@@ -507,11 +507,11 @@ public class TableElementView extends ExportableTable implements ElementView {
 							String prefix = t.substring(0, i);
 							String name = t.substring(i + 1);
 
-							Object[] _ = (Object[]) content.get(rowIndex);
-							_[1] = name;
+							Object[] o = (Object[]) content.get(rowIndex);
+							o[1] = name;
 
-							Object[] __ = (Object[]) content.get(0);
-							__[1] = prefix;
+							Object[] o2 = (Object[]) content.get(0);
+							o2[1] = prefix;
 
 						} catch (Throwable th) {
 
