@@ -1,0 +1,24 @@
+plugins {
+	id "application"
+}
+
+repositories {
+	mavenCentral()
+}
+
+sourceSets {
+	main.java.srcDirs = ["src"]
+	main.resources.srcDirs = ["src"]
+}
+
+compileJava {
+	sourceCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+	implementation fileTree(dir: "lib", include: ["**/*.jar"])
+}
+
+application {
+    mainClass = "com.japisoft.editix.main.Main"
+}
