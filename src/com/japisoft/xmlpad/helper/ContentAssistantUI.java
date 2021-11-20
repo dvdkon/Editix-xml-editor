@@ -50,7 +50,7 @@ import com.japisoft.xmlpad.helper.ui.TitledPanelHelper;
 /**
 This program is available under two licenses : 
 
-1. For non commercial usage : 
+1. GPL license for non commercial and commercial usage : 
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
